@@ -1,0 +1,38 @@
+%font-standard {
+  font-family: Monda, sans-serif;
+  font-weight: 400;
+}
+
+%font-nav {
+  @extend %font-standard;
+  color: $gray3;
+  font-size: 16px;
+  line-height: 40.33px;
+  &--logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40.33px;
+  }
+  &--bold {
+    font-weight: 700;
+    color: $black;
+  }
+}
+
+%font-section {
+  @extend %font-standard;
+  color: $black;
+  font-size: 18px;
+  line-height: 40.33px;
+  font-style: normal;
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+%font-footer {
+  @extend %font-standard;
+  color: $gray4;
+  font-size: 14px;
+  line-height: 30px;
+}

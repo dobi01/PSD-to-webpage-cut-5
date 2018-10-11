@@ -1,0 +1,31 @@
+.footer {
+  height: 177px;
+  width: 100%;
+  position: relative;
+  &__container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    max-width: 1060px;
+    width: 100%;
+  }
+  &__bg {
+    width: 100%;
+    object-fit: cover;
+    height: 177px;
+  }
+  &__text {
+    @extend %font-footer;
+    &--left {
+      float: left;
+    }
+    &--right {
+      float: right;
+    }
+  }
+  &__logo {
+    float: right;
+    margin: 7px 0 0 10px;
+  }
+}

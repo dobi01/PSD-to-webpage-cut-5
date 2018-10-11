@@ -1,0 +1,48 @@
+<%- include('base/_header.html') %>
+
+<main> 
+  <section class="section">
+    <div class="section__container">
+      <address class="address">
+        <img class="address__bg" src="assets/images/bg.png" alt="">
+        <div class="address__container">
+          <p class="address__text address__text--bold">Adres: ul.Budy 16, Łódź</p>
+          <p class="address__text">Biuro sprzedaży: Beskidzka 134, Łódź</p>
+        </div>
+      </address>
+      </div>
+      <div class="map">
+        <img id="map" class="map__img" src="assets/images/mapa.png" usemap="#image-map" alt="mapa Osiedla Marmurowe 2">
+        <map name="image-map">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="183,472,238,521" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="142,300,86,247" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="202,84,255,135" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="448,328,393,276" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="409,467,357,419" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="440,349,496,398" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="369,618,422,672" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="444,562,493,606" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="552,592,601,639" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="576,643,626,689" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="649,606,700,650" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="618,11,668,55" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="720,276,772,323" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="836,310,781,364" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="855,145,890,187" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="1022,179,962,220" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="742,428,795,378" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="799,412,855,366" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="895,420,950,371" shape="rect">
+            <area class="tooltip" data-tooltip-content="#tooltip_content" coords="891,494,945,451" shape="rect">
+        </map>
+        <div id="#my-tooltip" class="tooltip_templates">
+          <span id="tooltip_content">
+            <strong>Park</strong>
+            <p>im. Szarych Szeregów</p>
+          </span>
+        </div>
+      </div>
+  </section>
+</main>
+
+<%- include('base/_footer.html') %>

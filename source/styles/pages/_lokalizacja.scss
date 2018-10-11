@@ -1,0 +1,47 @@
+.section {
+  margin-top: 100px;
+  height: 1144px;
+  background: $white;
+  &__container {
+    height: 375px;
+  }
+}
+
+.address {
+  padding-top: 40px;
+  position: relative;
+  width: 100vw;
+  &__bg {
+    z-index: 4;
+    width: 100vw;
+  }
+  &__container {
+    position: absolute;
+    transform: translate(-40%, -50%);
+    left: 50%;
+    top: 40%;
+    z-index: 5;
+    text-align: center;
+  }
+  &__text {
+    @extend %font-section;
+    &--bold {
+      @extend %font-section--bold;
+    }
+  }
+}
+
+.map {
+  z-index: 6;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -70px; 
+  &__img {
+    display: block;
+    margin: 0 auto;
+    z-index: 6;
+    max-width: 1199px;
+    max-height: 709px;
+  }
+}
